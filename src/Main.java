@@ -1,6 +1,4 @@
 import java.io.IOException;
-import java.lang.reflect.Array;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -9,7 +7,6 @@ public class Main {
         String line = myObj.nextLine();
         String[] arr = line.split(" ");
         int[] numbers = {-10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        String[] operators = {"+", "-", "*", "/"};
         int x = 0, y = 0;
         if (arr.length != 3) {
             throw new IOException("Формат математической операции не удовлетворяет заданию: два операнда и один оператор (+, -, /, *)");
